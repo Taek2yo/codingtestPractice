@@ -2,14 +2,14 @@
 // a는 0, b는 1, c는 2, ..., j는 9입니다. 예를 들어 23살은 cd, 51살은 fb로 표현합니다. 나이 age가 매개변수로 주어질 때 PROGRAMMER-962식 나이를 return하도록 solution 함수를 완성해주세요.
 
 function solution(age) {
-  const ageArr = String(age).split("");
-  const ageIn962 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
+  const arr = String(age).split("");
+  const alpha = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"];
 
   let answer = "";
-  for (let i = 0; i < ageArr.length; i++) {
-    let index = Number(ageArr[i]);
+  for (let i = 0; i < arr.length; i++) {
+    let index = Number(arr[i]);
 
-    answer += ageIn962[index];
+    answer += alpha[index];
   }
   return answer;
 }
