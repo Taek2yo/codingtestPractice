@@ -4,5 +4,3 @@ function solution(my_string){
     const answer = [...my_string].map(Number).filter((e)=>!isNaN(e)).sort((a,b)=>a-b);
     return answer;
 }
-
-console.log(solution("hi4652"))

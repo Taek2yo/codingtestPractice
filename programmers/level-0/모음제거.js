@@ -6,5 +6,4 @@ function solution(my_string) {
     let answer = arr.filter((e)=>(!str.includes(e))).join('');
     return answer;
 }
-
-console.log(solution('bus'));
+;

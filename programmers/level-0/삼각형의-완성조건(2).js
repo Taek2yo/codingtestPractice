@@ -15,5 +15,3 @@ function solution(sides){
     }
     return count; 
 }
-
-console.log(solution([3,6]))

@@ -14,4 +14,3 @@ function solution(array, n){
    return near;
 }
 
-console.log(solution([3,10,28,27],20))

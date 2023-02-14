@@ -4,9 +4,4 @@ function solution(n) {
     return n % 7 === 0 ? Math.floor(n / 7) : Math.floor(n / 7) + 1;
 }
 
-// Math.ceil : 올림 
-// Math.floor : 내림
-// Math.round : 반올림
-
-// 다른 풀이
-// const solution = (n) => Math.ceil(n / 7)
+const solution2 = (n) => Math.ceil(n / 7)

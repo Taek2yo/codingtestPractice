@@ -8,11 +8,8 @@ function solution(order) {
   return answer;
 }
 
-console.log(solution(29423));
-
-
 // 다른 사람 풀이 - 정규 표현식.
-/* function solution(order) {
+function solution(order) {
     var answer = [...order.toString().matchAll(/[3|6|9]/g)].length;
     return answer;
-} */
+}

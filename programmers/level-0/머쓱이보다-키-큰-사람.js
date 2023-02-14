@@ -10,13 +10,8 @@ function solution(array, height){
     }
     return answer;
 }
-
-
-
-
+// 2번째 풀이
 function solution2(array, height){
     let answer = array.filter(item => item > height);
     return answer.length;
 }
-
-console.log(solution2([149, 180, 192, 170],167))

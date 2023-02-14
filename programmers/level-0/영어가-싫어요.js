@@ -6,5 +6,3 @@ function solution(numbers) {
     }
     return Number(numbers)
 }
-
-console.log(solution("onetwothreefourfivesixseveneightnine"	))

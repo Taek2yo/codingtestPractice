@@ -33,6 +33,5 @@ function solution(letter) {
 
   let answer = letter.split(" ").map(a => morse[a]).join("")
   return answer;
-}
+};
 
-console.log(solution("--.. -.--"))

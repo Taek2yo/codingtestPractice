@@ -5,7 +5,6 @@ function solution(my_string){
    return answer;
 }
 
-
+// 2번째 풀이
 const solution2 = (s) => [...s.toLowerCase()].sort().join('') 
 
-console.log(solution2("Bcad"))

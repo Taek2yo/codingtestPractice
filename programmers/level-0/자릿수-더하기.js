@@ -6,5 +6,3 @@ function solution(n) {
     .split("")
     .reduce((a, c) => a + Number(c), 0);
 }
-
-console.log(solution(1234));

@@ -20,7 +20,7 @@ function solution(babbling) {
 
 
 
-// 다른 사람 풀이 ( 정규표현식 )
+// 다른 사람 풀이 ( 정규표현식 ) ***
 function solution2(babbling){
     return babbling.filter(b => !b.replace(/aya|ye|woo|ma/g, '')).length;
 }

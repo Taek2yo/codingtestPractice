@@ -41,3 +41,5 @@ function solution(polynomial) {
     return "0";
   }
 }
+
+// 완료

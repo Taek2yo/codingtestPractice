@@ -6,5 +6,3 @@ function solution(array) {
     let center = parseInt(array.length/2);
     return array[center]
 }
-
-console.log(solution([1,3,2]))

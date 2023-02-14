@@ -10,4 +10,3 @@ function solution(n) {
     return ans;
 }
 
-console.log(solution(24));

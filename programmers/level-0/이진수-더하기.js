@@ -27,5 +27,3 @@ function solution2(bin1, bin2) {
       }
     return Number(temp.reverse().join("")).toString();
 }
-
-console.log(solution2("10","11"))

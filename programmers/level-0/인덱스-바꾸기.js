@@ -5,5 +5,3 @@ function solution(my_string, num1, num2) {
     [arr[num1],arr[num2]] = [arr[num2],arr[num1]];
     return arr.join('');
 }
-
-console.log(solution("hello",1,2))

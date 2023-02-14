@@ -4,5 +4,4 @@ function solution(numbers, num1, num2) {
     let answer = numbers.slice(num1, num2 + 1);
     return answer;
 }
-
-// slice()는 end index의 값은 잘라낼 배열에 포함되지 않기 때문에 +1 해줌. 
+;

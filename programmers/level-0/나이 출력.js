@@ -2,5 +2,4 @@
 // 0 < age <= 120
 const solution = (age) => 2023 - age
 
-// 이거 너무 알고리즘 처럼 안푼듯..
 // 출제자의 의도는 new Date().getFullYear() - age 인듯.. 

@@ -3,5 +3,3 @@
 function solution(my_string){
     return Function('"use strict";return (' + my_string + ')')();
 }
-
-console.log(solution("3 + 4"))

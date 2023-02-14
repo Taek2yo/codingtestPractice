@@ -4,5 +4,3 @@ function solution(s1,s2){
     let intersection = s1.filter(x=> s2.includes(x));
     return intersection.length;
 }
-
-console.log ( solution(["a", "b", "c"],["com", "b", "d", "p", "c"]))

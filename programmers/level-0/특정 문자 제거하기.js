@@ -11,15 +11,13 @@ function solution (my_string, letter) {
     return answer.join("");
 }
 
-console.log(solution("BCBdbe","B"))
 
 // 다른 사람 풀이
-function othersolution ( my_string, letter) {
+function solution2 ( my_string, letter) {
     const answer = my_string.split(letter).join('')
     return answer;
 }
 
-console.log(othersolution("abcdef","f"))
 
 // 해석. split() 메서드. 인자기준으로 분리해서 새로운 배열 반환 후 join('') 문자로 반환.
 

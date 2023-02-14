@@ -16,5 +16,3 @@ function solution(n) {
     
     return result;
 }
-
-console.log(solution(10));

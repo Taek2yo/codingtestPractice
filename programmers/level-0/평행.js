@@ -14,5 +14,3 @@ function solution(dots) {
     return 0
 }
 
-console.log(solution([[1, 4], [9, 2], [3, 8], [11, 6]]))
-

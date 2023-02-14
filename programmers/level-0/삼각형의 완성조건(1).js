@@ -9,4 +9,3 @@ function solution(sides) {
     } else return 2
 }
 
-console.log(solution([1, 2, 3]));

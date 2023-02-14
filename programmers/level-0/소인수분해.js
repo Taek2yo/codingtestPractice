@@ -16,5 +16,3 @@ function solution(n) {
   if (n > 2) arr.push(n);
   return [...new Set(arr)];
 }
-
-console.log(solution(420));

@@ -7,5 +7,3 @@ function solution(dots){
 
     return width*height;
 }
-
-console.log(solution([[1, 1], [2, 1], [2, 2], [1, 2]]))

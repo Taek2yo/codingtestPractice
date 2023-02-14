@@ -8,10 +8,9 @@ function solution(money) {
   return [coffee, exchange];
 }
 
-// 피드백
+// 2번째 풀이
 
 // 잔돈 = 가지고 있는 돈 / 가격 의 나머지
 // -> exchage = money % 5500
 
-/* const solution = (money) => [Math.floor(money / 5500), money % 5500]; */
-console.log(solution(15000));
+const solution2 = (money) => [Math.floor(money / 5500), money % 5500];

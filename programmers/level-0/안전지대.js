@@ -22,13 +22,3 @@ function solution(board) {
   const mineCnt = danger.flat().filter(d => d).length;
   return N * N - mineCnt;
 }
-
-console.log(
-  solution([
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0],
-    [0, 0, 1, 0, 0],
-    [0, 0, 0, 0, 0],
-  ])
-);

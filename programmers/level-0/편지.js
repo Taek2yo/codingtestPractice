@@ -5,5 +5,3 @@ function solution(message) {
     const str = message.split("").length * 2
     return str;
 }
-
-console.log(solution("happy birthday!"))

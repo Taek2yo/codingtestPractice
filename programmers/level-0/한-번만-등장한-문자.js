@@ -7,5 +7,3 @@ function solution(s){
     }
     return ans.sort().join('');
 }
-
-console.log(solution("adbadcadc"))

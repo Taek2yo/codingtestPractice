@@ -10,5 +10,3 @@ function solution(n) {
    }
    return x3;
 }
-
-console.log(solution(15))

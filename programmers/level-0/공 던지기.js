@@ -14,5 +14,4 @@ function solution(numbers, k) {
 
   return numbers[idx - 2];
 }
-
-console.log(solution([1, 2, 3, 4], 2));
+;

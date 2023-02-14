@@ -4,5 +4,3 @@ function solution (my_string){
     let answer = arr.reduce((a,c)=>a+c);
     return answer;
 }
-
-console.log(solution("aAb1B2cC34oOp"))

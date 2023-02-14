@@ -7,5 +7,3 @@ function solution (numbers) {
     })
     return answer;
 }
-
-// forEach, map , for 문, reduce ..

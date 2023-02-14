@@ -8,8 +8,6 @@ function solution(strlist){
     return answer;
 }
 
-console.log(solution(["We","are"]))
-
 // map() 사용
 
 function solution2 (strlist){

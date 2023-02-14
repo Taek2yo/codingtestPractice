@@ -5,4 +5,3 @@ function solution(before, after){
     let B = [...after].sort().join("");
     return A === B ? 1 : 0;
 }
-console.log(solution("allpe","apple"))

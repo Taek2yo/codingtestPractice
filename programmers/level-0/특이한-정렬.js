@@ -5,6 +5,3 @@ function solution(numlist, n) {
                                 // b랑 a의 거리가 같은 상황 차가 0 이면 뒤(b-a)가 실행
     return numlist.sort((a, b) => Math.abs(a - n) - Math.abs(b - n) || b - a);
   }
-
-
-console.log(solution([1, 2, 3, 4, 5, 6],4))

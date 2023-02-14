@@ -6,9 +6,6 @@ function solution(array){
     return [sort[0], idx]
 }
 
-/* console.log(solution([9, 10, 11, 8])) */
-
-
 // 피드백 
 
 function solution2(array){
@@ -16,5 +13,3 @@ function solution2(array){
     const idx = array.indexOf(max)
     return [max, idx]
 }
-
-console.log(solution2([9, 10, 11, 8]))

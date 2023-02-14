@@ -24,5 +24,3 @@ function solution(keyinput, board) {
   });
   return position;
 }
-
-console.log(solution(["left", "right", "up", "right", "right"], [11, 11]));

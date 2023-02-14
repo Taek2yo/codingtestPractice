@@ -16,6 +16,7 @@ function solution(dot) {
 // 하드코딩인 것 같아서 푼 뒤에 다른 사람 풀이를 보니 구조 분해를 하였다.
 
 function solution(dot) {
+  // 구조분해
   const [a, b] = dot;
   const check = a * b > 0;
   return a > 0 ? (check ? 1 : 4) : (check ? 3 : 2);

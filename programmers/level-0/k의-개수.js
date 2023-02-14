@@ -19,4 +19,3 @@ function solution2(i, j, k){
     return a.split(k).length -1 ;
 }
 
-console.log(solution2(1,13,1))

@@ -17,6 +17,6 @@ console.log(solution("cccCCC"));
 
 
 // 다른 풀이
-/* function solution(my_string) {
+function solution2(my_string) {
     return my_string.split('').map(n => n === n.toUpperCase() ? n.toLowerCase() : n.toUpperCase()).join('')
-} */
+}

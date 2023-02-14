@@ -6,5 +6,3 @@ function solution(numbers) {
   const min = arr[numbers.length -1] * arr[numbers.length -2];
   return max > min ? max : min;
 }
-
-console.log(solution([1, 2, -3, 4, -5]));

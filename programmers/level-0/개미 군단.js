@@ -9,3 +9,4 @@ function solution(hp) {
     const worker = hp - general * 5 - soldier * 3;
     return general + soldier + worker;
 }
+

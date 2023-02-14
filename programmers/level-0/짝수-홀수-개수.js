@@ -24,14 +24,3 @@ function solution(num_list) {
 
     return answer;
 }
-
-// for.. of
-let iterable = [10,20,30];
-
-for (let value of iterable){
-    console.log(value)
-}
-
-// 10
-// 20
-// 30

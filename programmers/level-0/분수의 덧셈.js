@@ -16,12 +16,3 @@ const solution = (denum1, num1, denum2, num2) => {
   }
   return [ molecule / GCD , denominator / GCD]
 };
-
-console.log(solution(1, 2, 3, 4));
-
-
-// 풀고 난 뒤 피드백
-// 문제를 다 잘 푼 것 같았는데 , 10번째 에서 생각없이 const로 선언했다가 에러가 떠서 뭐가 문제지 하고 한참을 찾아본 뒤에야
-// let으로 선언해야 한다는 것을 알았다...
-//
-// let은 재할당은 가능하지만 const 는 재할당도 안된다. 원시값은 불가능하나, 객체는 가능. const 키워드는 재할당을 금지함.

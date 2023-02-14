@@ -7,5 +7,4 @@ function solution(id_pw, db){
     const map = new Map(db);
     return map.has(id) ? (map.get(id) === pw ? 'login' : 'wrong pw') : 'fail';
 }
-
-console.log(solution(["rabbit04", "98761"],	[["jaja11", "98761"], ["krong0313", "29440"], ["rabbit00", "111333"]]))
+;

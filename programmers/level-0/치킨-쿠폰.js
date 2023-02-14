@@ -11,5 +11,3 @@ function solution(chicken){
     }
     return service
 }
-
-console.log(solution(100))

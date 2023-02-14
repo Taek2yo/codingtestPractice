@@ -10,6 +10,3 @@ function solution(n) {
   }
   return answer;
 }
-
-
-// 약수 구하기 . 나누어 떨어지는 = 나머지가 없다.
