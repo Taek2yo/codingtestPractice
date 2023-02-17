@@ -9,9 +9,11 @@ function solution(absolutes, signs){
     return answer
 }
 
-// map
+// reduce
 function solution2(absolutes, signs){
-    return absolutes.map((v,i)=>(signs[i] ? v : -v)).reduce((a,c)=>a+c)
+    return absolutes.reduce((a, c, i) => a + (c * (signs[i] ? 1 : -1)), 0);
 }
 
 console.log(solution2([4,7,12],[true,false,true]))
+
+// 이 문제는 for문이 좀 더 성능은 나오지만, reduce 함수는 내부적으로 최적화가 잘 되어 있어 reduce로도 풀어보았다.
