@@ -1,0 +1,28 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/17682
+
+function solution(dartResult) {
+  let answer = [];
+  let temp = 0;
+
+  for (let i = 0; i < dartResult.length; i++) {
+    if (dartResult[i].match(/[0-9]/)) {
+      if (dartResult[i] === "1" && dartResult[i + 1] === "0") {
+        temp = 10;
+        i++;
+      } else temp = dartResult[i];
+    } 
+    else if (dartResult[i] === "S") answer.push(Math.pow(temp, 1));
+    else if (dartResult[i] === "D") answer.push(Math.pow(temp, 2));
+    else if (dartResult[i] === "T") answer.push(Math.pow(temp, 3));
+    
+    else if (dartResult[i] === "*") {
+      answer[answer.length - 1] *= 2;
+      answer[answer.length - 2] *= 2;
+    } 
+    else if (dartResult[i] === "#") answer[answer.length - 1] *= -1;
+  }
+
+  return answer.reduce((a, c) => a + c);
+}
+
+console.log(solution("1D2S#10S"));
