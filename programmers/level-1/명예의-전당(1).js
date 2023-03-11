@@ -1,3 +1,4 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/138477
 function solution(k, score) {
   const honor = [];
 
@@ -18,3 +19,6 @@ function solution(k, score) {
   }
   return result;
 }
+
+
+console.log(solution(3,[10, 100, 20, 150, 1, 100, 200]))
