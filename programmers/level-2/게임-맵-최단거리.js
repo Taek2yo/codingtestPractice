@@ -1,4 +1,4 @@
-// 
+// https://school.programmers.co.kr/learn/courses/30/lessons/1844
 
 function solution(maps) {
     const row = maps.length; // 
