@@ -1,11 +1,7 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/42746
 
 function solution(numbers) {
-  function compare(x, y) {
-    return x + y > y + x ? -1 : 1;
-  }
-
-  numbers = numbers.map(String).sort(compare);
+  numbers = numbers.map(String).sort((a, b) => (a + b > b + a ? -1 : 1));
 
   const answer = numbers.join("");
 
