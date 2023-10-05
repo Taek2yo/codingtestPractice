@@ -1,6 +1,6 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/118667
 
-function findMinMovesToEqualSum(queue1, queue2) {
+function solution(queue1, queue2) {
     const queue = [...queue1, ...queue2];
     let sum1 = queue1.reduce(sum, 0);
     let sum2 = queue2.reduce(sum, 0);
@@ -34,3 +34,5 @@ function findMinMovesToEqualSum(queue1, queue2) {
 }
 
 const sum = (a, b) => a + b;
+
+console.log(solution([3, 2, 7, 2],[4, 6, 5, 1]))
