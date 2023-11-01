@@ -1,38 +1,36 @@
 // https://school.programmers.co.kr/learn/courses/30/lessons/181916
 
 function solution(a, b, c, d) {
-    const dices = [a, b, c, d]
-    const numFrequency = dices.reduce((acc, cur) => {
-        acc[cur] = acc[cur] ?? 0
-        acc[cur]++
-        return acc
-    }, {})
-    
-    const valueInfo = Object.values(numFrequency)
-    const keyInfo = Object.keys(numFrequency)
-    // return valueInfo
-    const countVal = Math.max(...valueInfo)
-    switch(countVal) {
-        case 4:
-            return a*1111
-        case 3: {
-            const threeKey  = keyInfo.find((a) => numFrequency[a] === 3)
-            const oneKey = keyInfo.find((a) => numFrequency[a] === 1)
-            console.log(threeKey, oneKey)
-            return (10 * Number(threeKey) + Number(oneKey))**2
-        }
-        case 2: {
-            if(keyInfo.length === 2) {
-                if(a === b) return (a+c) * Math.abs(a-c)
-                return (a+b) * Math.abs(a-b)
-            } else {
-                return  keyInfo.reduce((acc, cur) => numFrequency[cur] === 1 ? acc*cur : acc, 1)
-            }
-        }   
-        default: {
-            return Math.min(a,b,c,d)
-        }
-    }
-    
-    return numFrequency
+  const diceCounts = new Map();
+
+  [a, b, c, d].forEach((die) => {
+    diceCounts.set(die, (diceCounts.get(die) || 0) + 1);
+  });
+
+  const sortedValues = Array.from(diceCounts.values()).sort();
+  const sortedKeys = Array.from(diceCounts.keys()).sort(
+    (x, y) => diceCounts.get(x) - diceCounts.get(y)
+  );
+
+  const valuesStr = sortedValues.toString();
+
+  switch (valuesStr) {
+    case "4":
+      return 1111 * sortedKeys[0];
+    case "1,3":
+      const [smaller, larger] = sortedKeys;
+      return Math.pow(10 * larger + smaller, 2);
+    case "2,2":
+      const [first, second] = sortedKeys;
+      return (first + second) * Math.abs(first - second);
+    case "1,1,2":
+      const [min1, min2] = sortedKeys;
+      return min1 * min2;
+    default:
+      return Math.min(...sortedKeys);
+  }
 }
+
+console.log(solution([4, 1, 4, 4]));
+
+// 알고리즘 공부중 이전에 풀었던 코드가 너무 길고 복잡하여 개선시켜봄
